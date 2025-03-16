@@ -32,7 +32,34 @@ body {
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
     color: #E0E0E0;
+    
+    cursor: url('../Media/cursor.png'), auto;  
+
 }
+a:hover {
+  cursor: url('../Media/cursor-link.png'), pointer; /* Change cursor when clicked */
+}
+/* cursor design */
+/* .cursor-dot{ 
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+.cursor-outlin{
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+.cursor-style {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+} */
+
 header {
     position: fixed;
     padding: 3rem 0;
@@ -92,10 +119,15 @@ a {
 }
 .text-ontop-video > p {
     font-family: 'Caveat', cursive;
-    margin-bottom: 1.6em;
+    /* margin-bottom: 1.6em; */
     font-size: 2em;
     font-weight: bold;
     letter-spacing: 0.4em;
+}
+.quote {
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  letter-spacing: 4px;
 }
 
                         /* main pages */
