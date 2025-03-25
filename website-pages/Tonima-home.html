@@ -7,7 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="../Style/style.css">
 
     <title>Home</title>
@@ -20,18 +23,19 @@
     <header>
         <div class="header-links">
             <ul class="no-style links-ul">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="nav">Home</a></li>
+                <li><a href="#about" class="nav">About</a></li>
+                <li><a href="#skills" class="nav">Skills</a></li>
+                <li><a href="#works" class="nav">Works</a></li>
+                <li><a href="#resume" class="nav">Resume</a></li>
+                <li><a href="#contact" class="nav">Contact</a></li>
             </ul>
         </div>
     </header> 
     <!-- end of header -->
-        <section>
+        <section id="home">   <!-- section 1-->
             <video autoplay loop muted playsinline id="bg-video">
-                <source src="../Media/home-bg 2.mp4" type="video/mp4">
+                <source src="../Media/home-bg.mp4" type="video/mp4">
             </video>
             <div class="text-ontop-video">
                 <div>Tonima Akter</div>
@@ -40,46 +44,132 @@
                     "Fashion is not just about clothing; it’s about expressing who you are without saying a word."
                 </blockquote>
             </div>
+            <div class="logos">
+                <div><a href=""><img src="../Media/icons/linkedin.png" alt=""></a></div>
+                <div><a href=""><img src="../Media/icons/pinterest.png" alt=""></a></div>
+                <div><a href=""><img src="../Media/icons/gmail.png" alt=""></a></div>
+                <div><a href=""><img src="../Media/icons/instagram.png" alt=""></div>
+                <div><a href=""><img src="../Media/icons/facebook.png" alt=""></a></div>
+                
+            </div>
         </section>
 
-
-    <main class="homePage-main">
-        <section class="test">
-            <h1>
-                Home
-            </h1>
+        <section id="about">
+            <div class="head">About</div>
+            <div class="main-content about-content">
+                <div class="about-text">
+                    <p>
+                        Fashion is more than just clothing—it’s a form of self-expression, a blend of creativity and craftsmanship that tells a story. As a passionate fashion designer, I bring visions to life, crafting styles that inspire confidence and individuality.
+                        Let’s create something extraordinary—one stitch at a time!
+                    </p>
+                    <p>
+                        Currently, I’m working as a Fashion Designer at Nafisa Int’l Trading (BD) Ltd., where I get to experiment with innovative designs, explore new trends, and create pieces that resonate with modern aesthetics. My journey has also taken me through exciting experiences at Eco Sourcing Limited, where I collaborated with global brands like Zara and Stradivarius, focusing on sustainable fashion and eco-friendly denim sourcing.
+                    </p>
+                    <p>
+                        Armed with a degree in Fashion Design from Shanto-Mariam University of Creative Technology, I have sharpened my skills in digital and manual sketching, trend forecasting, and brand analysis. From designing mood boards to developing detailed tech packs, I thrive on the entire creative process—turning ideas into beautifully crafted garments.
+                    </p>
+                    <p>
+                        For me, fashion is all about blending elegance, comfort, and innovation to create something truly special. Whether designing custom pieces or contributing to large-scale collections, my goal is simple: to make fashion that speaks to the soul.
+                    </p>
+                    <p>
+                        Let’s create something extraordinary—one stitch at a time!
+                    </p>
+                    <span class="img-name">Tonima Akter</span>
+                </div>
+                <div class="profile-img-div">
+                    <img src="../Media/profile-img.jpg" alt="Profile image" class="profile-img">
+                </div>
+            </div>
         </section>
 
-        <section class="test">
-            <h1>
-                About
-            </h1>
+        <section id="skills">
+            <div class="head">
+                Skills
+            </div>
+            <div class="main-content skill-content">
+                <div class="skill skill-1" >
+                    <div>
+                        <img src="../Media/icons/illustrator.png" class="skill-icon" alt="">
+                        <div>Adobe Illustrator</div>
+                    </div>
+                    <div>
+                        <img src="../Media/icons/photoshop.png" class="skill-icon" alt="">
+                        <div>Adobe Photoshop</div>
+                    </div>
+                    <div>
+                        <img src="../Media/icons/office.png" class="skill-icon" alt="">
+                        <div>Microsoft Office Suite</div>
+                    </div>
+                    <div>
+                        <img src="../Media/icons/google.png" class="skill-icon" alt="">
+                        <div>G Suite</div>
+                    </div>
+                </div>
+                <div class="skill skill-2" >
+                    <div>
+                        <img src="../Media/icons/fashion-sketch.png" class="skill-icon" alt="">
+                        <div>Digital Sketch</div>
+                    </div>
+                    <div>
+                        <img src="../Media/icons/color-palette.png" class="skill-icon" alt="">
+                        <div>Manual Sketch</div>
+                    </div>
+                    <div>
+                        <img src="../Media/icons/trending.png" class="skill-icon" alt="">
+                        <div>Trend Forecasting</div>
+                    </div>
+                    <div>
+                        <img src="../Media/icons/competitors.png" class="skill-icon" alt="">
+                        <div>Brand Analysis</div>
+                    </div>
+                </div>
+                <div class="skill skill-3" >
+                    <div>
+                        <img src="../Media/icons/partners.png" class="skill-icon" alt="">
+                        <div>Team Work</div>
+                    </div>
+                    <div>
+                        <img src="../Media/icons/adaptation.png" class="skill-icon" alt="">
+                        <div>Adaptability</div>
+                    </div>
+                    <div>
+                        <img src="../Media/icons/chronometer.png" class="skill-icon" alt="">
+                        <div>Time management</div>
+                    </div>
+                    <div>
+                        <img src="../Media/icons/creativity.png" class="skill-icon" alt="">
+                        <div>Creativity</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="test">
-            <h1>
+        <section id="works">  <!-- section 2 -->
+            <div class="head">
                 Works
-            </h1>
+            </div>
+            <div class="works-content">
+                <div class="works-content-left">
+                    <img src="../Media/work-img.JPG" alt="model image" class="work-image">
+                </div>
+                <div class="works-content-left">
+
+                </div>
+            </div>
         </section>
 
-        <section class="test">
-            <h1>
+        <section id="resume">  <!-- section  3 -->
+            <div class="head">
                 Resume
-            </h1>
+            </div>
         </section>
 
-        <section class="test">
-            <h1>
+        <section id="contact">  <!-- section  4 -->
+            <div class="head">
                 Contact
-            </h1>
+            </div>
         </section>
 
-    </main>
-
-    
-
-    </div>
-    
     
 </body>
 <script src="../javaScript/javascript.js" defer></script>
