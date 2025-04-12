@@ -1,3 +1,4 @@
+<img src="../Media/work-img.JPG" alt="model image" class="work-image">
 /* Style the entire scrollbar */
 ::-webkit-scrollbar {
   width: 3px; /* Vertical scrollbar width */
@@ -239,7 +240,11 @@ section .head {
 
 /* ``````````````section 4````````````````````````````````` */
 #works {
- 
+  /* background-image: url('../Media/work-img.JPG'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; */
+  height: 200vh !important;
 }
 .works-content {
   display: flex;
@@ -248,8 +253,11 @@ section .head {
 
 .works-content-left {
   width: 50%;
+  display: flex;
 }
 .work-image {
-  width: 100%;
+  width: 40rem;
   height: 100%;
+  border: 14px solid #9e4a24;
+  border-radius: 5px;
 }
