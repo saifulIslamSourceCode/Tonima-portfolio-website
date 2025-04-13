@@ -92,7 +92,10 @@ a {
   text-decoration: none; /* Removes underline */
   color: inherit; /* Uses the parentÃ¢â‚¬â„¢s text color */
   cursor: pointer; /* Keeps the clickable behavior */
+  text-shadow: 0 0 3px black;
 }
+
+
 .links-ul > li {
   display: inline;
   padding: 0 1rem;
@@ -244,20 +247,36 @@ section .head {
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat; */
-  height: 200vh !important;
+  height: 240vh !important;
 }
 .works-content {
+  width: 95%;
+  margin: auto;
+}
+.works-content-img {
   display: flex;
-  
+  justify-content: space-between;
 }
 
-.works-content-left {
-  width: 50%;
-  display: flex;
-}
 .work-image {
-  width: 40rem;
-  height: 100%;
-  border: 14px solid #9e4a24;
+  width: 26rem;
+  /* height: 100%; */
+  /* border: 1px solid #9e4a24; */
   border-radius: 5px;
+}
+.Magazinea_pdf {
+  display: inline-block;
+  border: 1px solid #0ef;
+  margin: autos;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 0.2rem;
+}
+.Magazinea_pdf:hover {
+  background-color: rgb(4, 83, 88);
+}
+
+.techpack {
+  width: 37rem !important;
 }
