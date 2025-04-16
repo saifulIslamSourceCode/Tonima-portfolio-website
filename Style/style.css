@@ -185,11 +185,11 @@ h1, h2, h3, .head {
 
 }
 section .head {
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
   padding-top: 25px;
   font-family: "Playfair Display", serif;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 #about {
 
@@ -249,21 +249,87 @@ section .head {
   background-repeat: no-repeat; */
   height: 240vh !important;
 }
+
 .works-content {
-  width: 95%;
+  width: 98%;
   margin: auto;
 }
-.works-content-img {
-  display: flex;
-  justify-content: space-between;
+
+.works-texts {
+  /* margin-top: 15rem; */
+  text-align: center;
+  width: 50%;
 }
 
-.work-image {
-  width: 26rem;
-  /* height: 100%; */
-  /* border: 1px solid #9e4a24; */
-  border-radius: 5px;
+.magazin_section{
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
 }
+
+.works-content-img.techpack-div {
+  display: flex
+;
+  justify-content: space-around;
+}
+
+
+
+
+.slider-wrapper {
+  width: 100%;
+  max-width: 545px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  /* min-width: 77%; */
+  height: 800px;
+  background-color: #fff;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.nav-buttons button {
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
 .Magazinea_pdf {
   display: inline-block;
   border: 1px solid #0ef;
@@ -278,5 +344,5 @@ section .head {
 }
 
 .techpack {
-  width: 37rem !important;
+  width: 38rem;
 }
