@@ -31,11 +31,12 @@ scroll-behavior: smooth;
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #1A2227;
+  /* background-color: #1A2227; */
+  counter-reset: rgb(0, 0, 0);
   /* font-family: "Roboto", sans-serif; */
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
-  color: #E0E0E0;
+  /* color: #E0E0E0; */
   
   cursor: url('../Media/cursor.png'), auto;  
   /* scroll-behavior: smooth; */
@@ -45,7 +46,9 @@ p{
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
   line-height: 1.6;
-  color: #d9d9d9;
+  /* color: #d9d9d9;
+   */
+   color: black;
 }
 
 a:hover {
@@ -76,7 +79,8 @@ header {
   position: fixed;
   padding: 3rem 0;
   width: 98.5%;
-  color: white;
+  /* color: white; */
+  color: black;
   /* font-weight: bold;     */
 }
 .no-style {
