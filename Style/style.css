@@ -49,6 +49,7 @@ p{
   /* color: #d9d9d9;
    */
    color: black;
+   text-align: justify;
 }
 
 a:hover {
@@ -77,11 +78,12 @@ pointer-events: none;
 
 header {
   position: fixed;
-  padding: 3rem 0;
+  padding: 2rem 0;
   width: 98.5%;
   /* color: white; */
   color: black;
   /* font-weight: bold;     */
+  z-index: 2;
 }
 .no-style {
 list-style: none;
@@ -91,12 +93,24 @@ padding: 0;
 .links-ul {
   text-align: right;
 }
+.nav {
+  color: white;
+}
+
+
+/* js */
+.black {
+  color: black;
+  text-shadow: 0 0 3px #ffffff;
+}
+
+
 a {
   all: unset; /* Removes all inherited and default styles */
   text-decoration: none; /* Removes underline */
   color: inherit; /* Uses the parentÃ¢â‚¬â„¢s text color */
   cursor: pointer; /* Keeps the clickable behavior */
-  text-shadow: 0 0 3px black;
+  /* text-shadow: 0 0 3px black; */
 }
 
 
@@ -143,6 +157,7 @@ a {
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 0.4em;
+  color: white;
 }
 .quote {
 font-family: "Playfair Display", serif;
@@ -215,7 +230,8 @@ section .head {
   font-family: 'Caveat', cursive;
   position: relative;
   top: 0rem;
-  left: 61rem;
+  left: 63rem;
+  color: white;
 }
 .profile-img {
   width: 45rem;
@@ -261,13 +277,14 @@ section .head {
 
 .works-texts {
   /* margin-top: 15rem; */
-  text-align: center;
-  width: 50%;
+  /* text-align: center; */
+  width: 60%;
+  margin-left: 2rem;
 }
 
 .magazin_section{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 90%;
   margin: auto;
 }
@@ -288,6 +305,7 @@ section .head {
   position: relative;
   border-radius: 10px;
   margin: auto;
+  margin: 0;
 }
 
 .slider {
@@ -342,9 +360,11 @@ section .head {
   padding: 1rem;
   margin-bottom: 1.2rem;
   border-radius: 0.2rem;
+  background-color: rgb(222 253 255);
 }
 .Magazinea_pdf:hover {
   background-color: rgb(4, 83, 88);
+  transition: ;
 }
 
 .techpack {
