@@ -1,18 +1,17 @@
-<img src="../Media/work-img.JPG" alt="model image" class="work-image">
 /* Style the entire scrollbar */
 ::-webkit-scrollbar {
-  width: 3px; /* Vertical scrollbar width */
-  height: 3px; /* Horizontal scrollbar height */
+  width: 4px; /* Vertical scrollbar width */
+  height: 4px; /* Horizontal scrollbar height */
 }
 
 /* Style the scrollbar track (background) */
 ::-webkit-scrollbar-track {
-  background: #f4f4f4; /* Light gray color for the track */
+  background: rgba(255, 255, 255, 0); /* Light gray color for the track */
 }
 
 /* Style the scrollbar thumb (draggable part) */
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Dark gray color for the thumb */
+  background: #777676; /* Dark gray color for the thumb */
   border-radius: 10px; /* Rounded corners for the thumb */
 }
 
@@ -35,7 +34,7 @@ body {
   counter-reset: rgb(0, 0, 0);
   /* font-family: "Roboto", sans-serif; */
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+  overflow-x: scroll;
   /* color: #E0E0E0; */
   
   cursor: url('../Media/cursor.png'), auto;  
@@ -131,7 +130,7 @@ a {
   height: 100%;
   object-fit: cover; /* Ensures it covers the screen */
   z-index: -1; /* Sends it behind other content */
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .text-ontop-video{
   position: absolute;
@@ -148,8 +147,8 @@ a {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 5em;
-  font-weight: bold;
+  font-size: 4em;
+  font-weight: 400;
 }
 .text-ontop-video > p {
   font-family: 'Caveat', cursive;
@@ -166,6 +165,12 @@ letter-spacing: 4px;
 }
 
                       /* main pages */
+/* #home {
+  background-image: url('../Media/Home Page.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+} */
 .homePage-main {
   width: 100vw;
   height: 100vh;
@@ -196,72 +201,12 @@ padding: 10px 0;
 
 section {
 height: 100vh;
-}
-
-/* ``````````````````````section 2 ```````````````````````` */
-h1, h2, h3, .head {
-  font-family: "Playfair Display", serif;
-
-}
-section .head {
-  font-size: 3em;
-  text-align: center;
-  padding-top: 25px;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 2rem;
-}
-#about {
-
-}
-.main-content {
-  width: 90%;
-  margin: auto;
-}
-
-.about-content {
-  display: flex;
-  justify-content: space-between;
-}
-.img-name {
-  background-color: #6f66c5;
-  padding: 2px 10px;
-  border-radius: 40px;
-  font-size: 2.5em;
-  font-family: 'Caveat', cursive;
-  position: relative;
-  top: 0rem;
-  left: 63rem;
-  color: white;
-}
-.profile-img {
-  width: 45rem;
-  border-radius: 50%;
-}
-.about-text p {
 
 }
 
-/* ``````````````````````section 3``````````````````````````` */
-#skills {
-  
-}
-.skill-content {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10rem;
-}
-.skill div {
-  font-size: 36px;
-  /* padding-bottom: 5px; */
-  display: flex;
-  /* margin: 13px; */
-  padding: 9px;
-}
-.skill-icon {
-  
-}
 
-/* ``````````````section 4````````````````````````````````` */
+
+/* ``````````````section Work````````````````````````````````` */
 #works {
   /* background-image: url('../Media/work-img.JPG'); 
   background-size: cover; 
@@ -274,6 +219,39 @@ section .head {
   width: 98%;
   margin: auto;
 }
+.dresses_div_Parent {
+  display: flex;
+}
+
+/*Model img hover*/
+.img-container {
+  position: relative;
+  width: 100%;
+  max-width: 30rem;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+}
+
+.dress_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: auto;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+
+.zoom_default {
+  transform: scale(1) !important;
+}
+
+/* zoom  */
+/* I just remove the 2nd img and add zoom to based img */
+
+
+
+  
 
 .works-texts {
   /* margin-top: 15rem; */
@@ -370,3 +348,67 @@ section .head {
 .techpack {
   width: 38rem;
 }
+
+/* ``````````````````````section About ```````````````````````` */
+h1, h2, h3, .head {
+  font-family: "Playfair Display", serif;
+
+}
+section .head {
+  font-size: 3em;
+  text-align: center;
+  padding-top: 25px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 2rem;
+}
+#about {
+
+}
+.main-content {
+  width: 90%;
+  margin: auto;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+.img-name {
+  background-color: #6f66c5;
+  padding: 2px 10px;
+  border-radius: 40px;
+  font-size: 2.5em;
+  font-family: 'Caveat', cursive;
+  position: relative;
+  top: 0rem;
+  left: 63rem;
+  color: white;
+}
+.profile-img {
+  width: 45rem;
+  border-radius: 50%;
+}
+.about-text p {
+
+}
+
+/* ``````````````````````section 3``````````````````````````` */
+#skills {
+  
+}
+.skill-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10rem;
+}
+.skill div {
+  font-size: 36px;
+  /* padding-bottom: 5px; */
+  display: flex;
+  /* margin: 13px; */
+  padding: 9px;
+}
+.skill-icon {
+  
+}
+
