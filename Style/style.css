@@ -107,10 +107,37 @@ padding: 0;
 a {
   all: unset; /* Removes all inherited and default styles */
   text-decoration: none; /* Removes underline */
-  color: inherit; /* Uses the parentÃ¢â‚¬â„¢s text color */
+  color: inherit; /* Uses the parentÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s text color */
   cursor: pointer; /* Keeps the clickable behavior */
   /* text-shadow: 0 0 3px black; */
 }
+button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+/* Clean hover/focus/active states */
+button:hover,
+button:focus,
+button:active {
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+button img {
+  display: block;
+  pointer-events: none; /* ensures the image doesn’t block button clicks */
+}
+
 
 
 .links-ul > li {
@@ -150,7 +177,7 @@ a {
   font-size: 4em;
   font-weight: 400;
 }
-.text-ontop-video > p {
+.cursive_text {
   font-family: 'Caveat', cursive;
   /* margin-bottom: 1.6em; */
   font-size: 2em;
@@ -199,10 +226,7 @@ font-size: 1.8em;
 padding: 10px 0;
 }
 
-section {
-height: 100vh;
-
-}
+section {height: 100vh;}
 
 
 
@@ -212,7 +236,7 @@ height: 100vh;
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat; */
-  height: 240vh !important;
+  height: 265vh !important;
 }
 
 .works-content {
@@ -224,12 +248,14 @@ height: 100vh;
 }
 
 /*Model img hover*/
+/* I just remove the 2nd img and add zoom to based img Date: 18 april 2025 */
 .img-container {
   position: relative;
   width: 100%;
   max-width: 30rem;
   aspect-ratio: 2 / 3;
   overflow: hidden;
+  /* align-items: center; */
 }
 
 .dress_img {
@@ -241,13 +267,42 @@ height: 100vh;
   transform-origin: center center;
 }
 
+.dress_name {
+  position: absolute;
+  z-index: 2;
+  color: #000000;
+  top: 41rem;
+  /* text-align: center; */
+  align-items: center;
+  left: 8rem;
+}
+.dress_name > div {
 
-.zoom_default {
-  transform: scale(1) !important;
+/* font-size: 1rem; */
+
+color: #dab86e;
+
+font-weight: 500;
+
+text-shadow: 0 0 3px black;
+
+font-weight: bolder;
+
+text-align: center;
+}
+.dress_name> p {
+  
+font-size: 1em;
+  
+color: #fee7b5;
 }
 
-/* zoom  */
-/* I just remove the 2nd img and add zoom to based img */
+/* megazin preview image */
+.magazin > img {
+  width: 37rem;
+  border: 6px solid #eed793;
+  box-shadow: 0 4px 8px #f3dea3;
+}
 
 
 
@@ -256,15 +311,16 @@ height: 100vh;
 .works-texts {
   /* margin-top: 15rem; */
   /* text-align: center; */
-  width: 60%;
+  /* width: 60%; */
   margin-left: 2rem;
 }
 
 .magazin_section{
   display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: auto;
+  justify-content: space-around;
+  /* width: 90%; */
+  /* margin: auto; */
+  margin-top: 5rem;
 }
 
 .works-content-img.techpack-div {
@@ -274,35 +330,27 @@ height: 100vh;
 }
 
 
-
-
 .slider-wrapper {
   width: 100%;
-  max-width: 545px;
+  max-width: 50%;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
-  margin: auto;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  will-change: transform;
 }
 
 .card {
-  /* min-width: 77%; */
-  height: 800px;
-  background-color: #fff;
-  margin: 0 10px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  object-fit: cover;
 }
+
 
 .nav-buttons {
   position: absolute;
@@ -316,12 +364,14 @@ height: 100vh;
 
 .nav-buttons button {
   pointer-events: auto;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   border: none;
   color: white;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   font-size: 20px;
   border-radius: 5px;
+  cursor: pointer;
+  /* all: unset; */
   cursor: pointer;
 }
 
@@ -343,6 +393,15 @@ height: 100vh;
 .Magazinea_pdf:hover {
   background-color: rgb(4, 83, 88);
   transition: ;
+}
+
+.techpack-parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+.techpack_text {
+  width: 45%;
+  margin-top: 5rem;
 }
 
 .techpack {

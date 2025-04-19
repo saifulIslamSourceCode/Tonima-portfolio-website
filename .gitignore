@@ -1,0 +1,14 @@
+# Ignore image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Ignore documents
+*.pdf
+
+# Ignore audio files
+*.mp3
+
+# Ignore video files
+*.mp4

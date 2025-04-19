@@ -1,21 +1,29 @@
 //Work section slider
 const slider = document.getElementById('slider');
-  const cards = document.querySelectorAll('.card');
-  let index = 0;
+const cards = document.querySelectorAll('.card');
+let index = 0;
 
-  function updateSlider() {
-    slider.style.transform = `translateX(-${index * 100}%)`;
-  }
+function updateSlider() {
+  const cardWidth = cards[0].offsetWidth;
+  slider.style.transform = `translateX(-${index * cardWidth}px)`;
+}
 
-  function nextSlide() {
-    index = (index + 1) % cards.length;
-    updateSlider();
-  }
+function nextSlide() {
+  index = (index + 1) % cards.length;
+  updateSlider();
+}
 
-  function prevSlide() {
-    index = (index - 1 + cards.length) % cards.length;
-    updateSlider();
-  }
+function prevSlide() {
+  index = (index - 1 + cards.length) % cards.length;
+  updateSlider();
+}
+
+// Responsive on resize
+window.addEventListener('resize', updateSlider);
+
+// Optional: Call once on load
+window.addEventListener('DOMContentLoaded', updateSlider);
+
 
   //nav links text will be black after 100 vh
   window.addEventListener("scroll", () =>{
