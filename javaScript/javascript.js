@@ -25,15 +25,20 @@ window.addEventListener('resize', updateSlider);
 window.addEventListener('DOMContentLoaded', updateSlider);
 
 
-  //nav links text will be black after 100 vh
+
+  //header will be fixed after 100 vh
   window.addEventListener("scroll", () =>{
-    let navLinks = document.querySelectorAll('.nav');
+    let navLinks = document.querySelectorAll(".nav");
+    let Pageheader = document.getElementById('Pageheader');
     let targetHeight = window.innerHeight * 1.6;
+    
 
     if(window.scrollY >= targetHeight) {
       navLinks.forEach(links => links.classList.add("black"));
+      Pageheader.classList.add("fixed");
     } else {
       navLinks.forEach(links => links.classList.remove("black"));
+      Pageheader.classList.remove("fixed");
 
     }
   })
@@ -84,3 +89,23 @@ window.addEventListener('DOMContentLoaded', updateSlider);
   zoomEvent(imgConteiner_2);
   zoomEvent(imgConteiner_3);
   zoomEvent(imgConteiner_4);
+
+
+  // Resume section hover effect
+  let jobTitle = document.querySelector(".current_job");
+  let officeCard = document.querySelector(".office_card");
+
+  function officeCardPuppu() {
+    officeCard.style.display = "block"
+  }
+  function removeOfficeCard() {
+    officeCard.style.display = "none"
+
+  }
+  jobTitle.addEventListener("mouseover", officeCardPuppu)
+  officeCard.addEventListener("mouseover", officeCardPuppu)
+
+  jobTitle.addEventListener("mouseleave", removeOfficeCard)
+  officeCard.addEventListener("mouseleave", removeOfficeCard)
+
+
