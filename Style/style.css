@@ -151,7 +151,9 @@ button img {
   pointer-events: none; /* ensures the image doesn’t block button clicks */
 }
 
-
+.active {
+  color: #0ef;
+}
 
 .links-ul > li {
   display: inline;
@@ -516,7 +518,7 @@ height: 200vh;
 .experienc {
 
 }
-#resume {
+#resume_div {
   width: 70%;
   margin: auto;
   display: flex;
