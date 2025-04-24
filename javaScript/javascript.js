@@ -26,19 +26,25 @@ window.addEventListener('DOMContentLoaded', updateSlider);
 
 
 
-  //header will be fixed after 100 vh
+  //header will be fixed after 100 vh //
+  //star scroll nav will opacity 0
+
+
+
   window.addEventListener("scroll", () =>{
+    let ulDiv = document.querySelector(".links-ul");
     let navLinks = document.querySelectorAll(".nav");
     let Pageheader = document.getElementById('Pageheader');
     let targetHeight = window.innerHeight * 1.6;
-    
 
     if(window.scrollY >= targetHeight) {
-      navLinks.forEach(links => links.classList.add("black"));
+      // navLinks.forEach(links => links.classList.add("black"));
+      ulDiv.classList.add("fix-ul");
       Pageheader.classList.add("fixed");
     } else {
-      navLinks.forEach(links => links.classList.remove("black"));
+      // navLinks.forEach(links => links.classList.remove("black"));
       Pageheader.classList.remove("fixed");
+      ulDiv.classList.remove("fix-ul");
 
     }
   });
@@ -162,5 +168,3 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   jobTitle.addEventListener("mouseleave", removeOfficeCard)
   officeCard.addEventListener("mouseleave", removeOfficeCard)
-
-
