@@ -172,3 +172,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   // document.querySelector('#about').scrollIntoView({
   //   behavior: 'smooth'
   // });
+
+
+
