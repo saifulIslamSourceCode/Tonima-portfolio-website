@@ -168,3 +168,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   jobTitle.addEventListener("mouseleave", removeOfficeCard)
   officeCard.addEventListener("mouseleave", removeOfficeCard)
+
+  // document.querySelector('#about').scrollIntoView({
+  //   behavior: 'smooth'
+  // });

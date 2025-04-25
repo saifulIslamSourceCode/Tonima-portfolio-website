@@ -1,7 +1,7 @@
 /* Style the entire scrollbar */
 ::-webkit-scrollbar {
-  width: 4px; /* Vertical scrollbar width */
-  height: 4px; /* Horizontal scrollbar height */
+  width: 5px; /* Vertical scrollbar width */
+  height: 5px; /* Horizontal scrollbar height */
 }
 
 /* Style the scrollbar track (background) */
@@ -12,7 +12,7 @@
 /* Style the scrollbar thumb (draggable part) */
 ::-webkit-scrollbar-thumb {
   background: #777676; /* Dark gray color for the thumb */
-  border-radius: 10px; /* Rounded corners for the thumb */
+  border-radius: 20px; /* Rounded corners for the thumb */
 }
 
 /* Style the thumb when hovered */
@@ -24,8 +24,10 @@
 ::-webkit-scrollbar-corner {
   background: #f1f1f1; /* Same as track color */
 }
+
 html {
 scroll-behavior: smooth;
+overscroll-behavior: contain;
 }
 body {
   margin: 0px;
@@ -50,10 +52,9 @@ p{
    color: black;
    text-align: justify;
 }
-
-a:hover {
-cursor: url('../Media/cursor-link.png'), pointer; /* Change cursor when clicked */
-}
+/* a:hover {
+  cursor: url('../Media/cursor-link.png'), pointer;
+} */
 /* cursor design */
 /* .cursor-dot{ 
 width: 5px;
@@ -82,7 +83,7 @@ header {
   /* color: white; */
   color: black;
   /* font-weight: bold;     */
-  z-index: 2;
+  z-index: 10;
   /* opacity: 0; */
 }
 .no-style {
@@ -268,15 +269,16 @@ section:nth-child(odd) {
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat; */
-  height: 265vh !important;
+  /* height: 265vh !important; */
 }
 
 .works-content {
   width: 98%;
   margin: auto;
+  padding-bottom: 5rem;
 }
 .dresses_div_Parent {
-  cursor: url('../Media/icons/zoom\ in.png'), auto;
+  /* cursor: url('../Media/icons/zoom\ in.png'), auto; */
   display: flex;
 }
 
@@ -371,6 +373,7 @@ color: #fee7b5;
   border-radius: 10px;
   margin: 0 auto;
   box-shadow: 1px 2px 8px 1px gray;
+  /* height: 45rem; */
 }
 
 .slider {
@@ -382,7 +385,8 @@ color: #fee7b5;
 .card {
   flex: 0 0 100%;
   max-width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
+  height: 35rem;
 }
 
 
@@ -409,9 +413,6 @@ color: #fee7b5;
   cursor: pointer;
 }
 
-.nav-buttons button:hover {
-  background: rgba(0, 0, 0, 0.7);
-}
 
 
 .Magazinea_pdf {
@@ -459,7 +460,13 @@ section .head {
 
 /* padding-top: 4rem; */
 
-height: 200vh;
+/* height: 200vh; */
+
+/* margin: 3rem 0; */
+
+margin-bottom: 6rem;
+
+padding-top: 3rem;
 }
 .main-content {
   width: 90%;
@@ -471,6 +478,7 @@ height: 200vh;
   justify-content: space-between;
   
 }
+
 .img-name {
   background-color: #6f66c5;
   padding: 2px 10px;
@@ -487,17 +495,28 @@ height: 200vh;
   border-radius: 50%;
 }
 .about-text {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .tonima_img {
   width: 25%; height: auto; border-radius: 8px;
+}
+.dress_tonima {
+  display: flex;
+  width: 48%;
+  justify-content: space-between;
+}
+.dress_tonima_img {
+  
+width: 49%;
+  
+border-radius: 15px;
 }
 .tonima_img_last {
   grid-column: span 2; width: 50%; height: auto; border-radius: 8px;
 }
 .dress_info {
   text-align: justify;
-  width: 51%;
+  width: 48%;
   margin-top: 5rem;
 }
 .Sunset_tonima {
@@ -521,7 +540,7 @@ height: 200vh;
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating the image */
   /* position: static; */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .skill-content {
   display: flex;
@@ -538,7 +557,7 @@ height: 200vh;
 }
 .skill_div {
   background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -586,4 +605,119 @@ font-size: 1.2em;
   text-decoration: underline;
   cursor: url('../Media/cursor-link.png'), pointer;
   color: #0ef;
+}
+
+
+
+/* `````````````````````Section Contact````````````````````````````` */
+#contact{
+  /* height: 100vh; */
+}
+.contact_div {
+  display: flex;
+  justify-content: space-between;
+}
+.contact_img{
+ width: 50%;
+}
+.contact_img img{
+  width: 31rem;
+  /* height: 100%; */
+  position: relative;
+  left: 13rem;
+  /* border: 2rem solid #fee7b5; */
+  top: 15px;
+  border-radius: 15px;
+}
+
+form {
+  font-family: sans-serif;
+  /* background-color: #f1ede7; */
+  /* padding: 20px; */
+  width: 300px;
+  /* border-top: 2px solid; */
+  /* border-left: 2px solid; */
+  /* padding: 1.5rem; */
+}
+
+label {
+  display: block;
+  margin: 20px 0 5px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000;
+  padding: 8px 0;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  margin: 13px 0px;
+}
+
+.submit_btn {
+  margin-top: 33px;
+  padding: 13px 75px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.submit_btn:hover {
+  background: #2b2b2b;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.contact_left {
+  
+display: flex;
+  
+/* padding-left: 25rem; */
+  
+border-left: 2px solid;
+  
+padding: 2.5rem;
+  
+border-top: 2px solid;
+}
+
+.contact_form {
+  width: 50%;
+  margin-top: 3rem;
+}
+.contact_head {
+  font-size: 5em;
+  font-family: 'Montserrat';
+}
+.contact_info {
+  margin-left: 11rem;
+}
+
+.email {
+  margin-bottom: 4rem;
+}
+.contact_info_head {
+  font-size: 2em;
+  margin-bottom: 4px;
+}
+
+.social_links {
+  margin-top: 5rem;
+}
+.social_links a {
+  
+margin-right: 1rem;
+  
+/* font-size: 0; */
+}
+.social_links a img {
+  
+width: 1.5rem;
 }
