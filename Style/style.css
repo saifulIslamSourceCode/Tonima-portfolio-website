@@ -133,6 +133,9 @@ a {
   cursor: pointer; /* Keeps the clickable behavior */
   /* text-shadow: 0 0 3px black; */
 }
+.underline {
+  text-decoration: underline;
+}
 button {
   background: none;
   border: none;
@@ -490,7 +493,7 @@ padding-top: 1rem;
   top: -8rem;
   left: 65rem;
   color: white;
-  box-shadow: 1px 3px 7px 0px #dabeff;
+  /* box-shadow: 1px 3px 7px 0px #dabeff; */
 }
 .profile-img {
   width: 45rem;
@@ -745,7 +748,7 @@ background: #162039;
   
 width: 92%;
   
-height: 2rem;
+height: 1rem;
   
 margin: auto;
   
@@ -755,7 +758,7 @@ text-align: center;
   
 color: white;
   
-padding: 14px 23px 0 37px;
+padding: 10px 15px 10px 15px;
   
 display: flex;
   
