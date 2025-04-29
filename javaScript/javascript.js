@@ -1,3 +1,48 @@
+//header menu button click event
+let btns = document.querySelectorAll(".menu_btn");
+let sideBar = document.querySelector(".side_nav_div");
+let rightSideBlock = document.querySelector(".block_right_div");
+console.log(btns[0])
+
+
+
+btns[0].addEventListener("click", ()=> {
+  btns.forEach((b)=> b.classList.remove("menu_btn_click"));
+  btns[1].classList.add("menu_btn_click");
+  sideBar.classList.add("side_nav_div_visible");
+  document.body.style.overflow = "hidden";
+  rightSideBlock.classList.add("block_right_div_visible");
+});
+function removeSideBar() {
+  btns.forEach((b)=> b.classList.remove("menu_btn_click"));
+  btns[0].classList.add("menu_btn_click");
+  sideBar.classList.remove("side_nav_div_visible");
+  document.body.style.overflow = "auto";
+  rightSideBlock.classList.remove("block_right_div_visible");
+}
+btns[1].addEventListener("click", ()=> {
+  removeSideBar();
+});
+
+rightSideBlock.addEventListener("click", ()=> {
+  removeSideBar()
+})
+
+
+
+// btns.forEach((btn, index) => {
+//   btn.addEventListener('click', () => {
+//     btns.forEach((b) => {
+//       b.classList.remove('menu_btn_click');
+
+//     });
+//     btns[(index + 1) % 2].classList.add('menu_btn_click');
+//   });
+// });
+
+
+
+
 //Work section slider
 const slider = document.getElementById('slider');
 const cards = document.querySelectorAll('.card');
@@ -35,7 +80,7 @@ window.addEventListener('DOMContentLoaded', updateSlider);
     let ulDiv = document.querySelector(".links-ul");
     let navLinks = document.querySelectorAll(".nav");
     let Pageheader = document.getElementById('Pageheader');
-    let targetHeight = window.innerHeight * 1.6;
+    let targetHeight = window.innerHeight * 0.2;
 
     if(window.scrollY >= targetHeight) {
       // navLinks.forEach(links => links.classList.add("black"));
