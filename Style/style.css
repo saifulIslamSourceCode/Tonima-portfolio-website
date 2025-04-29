@@ -1,18 +1,18 @@
 /* Style the entire scrollbar */
 ::-webkit-scrollbar {
-  width: 5px; /* Vertical scrollbar width */
-  height: 5px; /* Horizontal scrollbar height */
+  width: 4px; /* Vertical scrollbar width */
+  height: 4px; /* Horizontal scrollbar height */
 }
 
 /* Style the scrollbar track (background) */
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0); /* Light gray color for the track */
+  background: rgba(255, 211, 117, 0);
 }
 
 /* Style the scrollbar thumb (draggable part) */
 ::-webkit-scrollbar-thumb {
-  background: #cac6c6; /* Dark gray color for the thumb */
-  border-radius: 20px; /* Rounded corners for the thumb */
+  background: #b8b8b8; /* Dark gray color for the thumb */
+  border-radius:10%; /* Rounded corners for the thumb */
 }
 
 /* Style the thumb when hovered */
@@ -22,7 +22,7 @@
 
 /* Optional: Change the scrollbar corner (where horizontal and vertical meet) */
 ::-webkit-scrollbar-corner {
-  background: #f1f1f1; /* Same as track color */
+  background: #ffffff00; /* Same as track color */
 }
 
 html {
@@ -128,7 +128,7 @@ header {
   
 width: 100%;
   
-margin-top: 1rem;
+/* margin-top: 1rem; */
 }
 .side_bar_div_img {
   
@@ -139,7 +139,7 @@ margin-top: 1rem;
   position: absolute;
   top: 3.3rem;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
   white-space: nowrap;
   transform: scaleX(0);
   transform-origin: left;
@@ -158,7 +158,9 @@ margin: auto;
   
 margin-top: 3rem;
   
-margin-left: 8rem;
+margin: 4rem 0 4rem 6rem;
+  
+overflow: auto;
 }
 .side_li {
 
@@ -210,6 +212,9 @@ padding-bottom: 3rem;
 .black {
   /* color: black; */
   /* text-shadow: 0 0 3px #ffffff; */
+}
+.side_bar_Scroll_indicator {
+  bottom: 300px !important;
 }
 .fixed {
   background-image: url("../Media/header bg.png");
@@ -343,7 +348,7 @@ transition: 0.5s;
 color: #0ef
 }
 
-.logos {position: absolute;bottom: 186px;right: 60px;}
+.logos {position: absolute;bottom: 186px;left: 60px;}
 .logos {
 font-size: 1.8em;
 }
@@ -360,6 +365,49 @@ section:nth-child(odd) {
   background-color:#fffaf0;
 }
 
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  animation: bounceText 2s infinite;
+}
+
+.scroll-indicator::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 8px auto 0;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: rotate(45deg);
+  animation: bounceArrow 1.5s infinite;
+}
+
+@keyframes bounceArrow {
+  0%, 20%, 50%, 80%, 100% {
+    transform: rotate(45deg) translateY(0);
+  }
+  40% {
+    transform: rotate(45deg) translateY(6px);
+  }
+  60% {
+    transform: rotate(45deg) translateY(4px);
+  }
+}
+
+@keyframes bounceText {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 5px);
+  }
+}
 
 
 /* ``````````````section Work````````````````````````````````` */
