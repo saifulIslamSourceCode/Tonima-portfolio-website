@@ -21,6 +21,6 @@ A clean, modern, and responsive website built for showcasing fashion collections
 - **HTML5**
 - **CSS3**
 - **JavaScript** (with some TypeScript snippets)
-- Hosted on **Netlify**
+- Hosted on **Netlify** and **Vercel**
 
 ---
