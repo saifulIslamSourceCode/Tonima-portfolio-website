@@ -2,6 +2,7 @@
 let btns = document.querySelectorAll(".menu_btn");
 let sideBar = document.querySelector(".side_nav_div");
 let rightSideBlock = document.querySelector(".block_right_div");
+let Pageheader = document.getElementById('Pageheader');
 console.log(btns[0])
 
 
@@ -12,6 +13,8 @@ btns[0].addEventListener("click", ()=> {
   sideBar.classList.add("side_nav_div_visible");
   document.body.style.overflow = "hidden";
   rightSideBlock.classList.add("block_right_div_visible");
+  Pageheader.style.backgroundClip = "#541d09"
+  
 });
 function removeSideBar() {
   btns.forEach((b)=> b.classList.remove("menu_btn_click"));
@@ -219,4 +222,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
   // });
 
 
+
+/*
+
+                lalon-geetee page
+
+ */
 

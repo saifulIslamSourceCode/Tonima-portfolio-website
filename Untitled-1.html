@@ -2,63 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Scroll Down Indicator</title>
+  <title>Fancy Image Grid</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      height: 200vh;
-      background: linear-gradient(to bottom, #ffffff, #e0e0ff);
-      font-family: Arial, sans-serif;
+      padding: 0;
     }
 
-    .scroll-indicator {
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 16px;
-      color: #555;
-      text-align: center;
-      animation: bounceText 2s infinite;
+    body {
+      font-family: sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
     }
 
-    .scroll-indicator::after {
-      content: "";
-      display: block;
-      width: 8px;
-      height: 8px;
-      margin: 8px auto 0;
-      border-bottom: 2px solid #555;
-      border-right: 2px solid #555;
-      transform: rotate(45deg);
-      animation: bounceArrow 1.5s infinite;
+    .fancy-image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
     }
 
-    @keyframes bounceArrow {
-      0%, 20%, 50%, 80%, 100% {
-        transform: rotate(45deg) translateY(0);
-      }
-      40% {
-        transform: rotate(45deg) translateY(6px);
-      }
-      60% {
-        transform: rotate(45deg) translateY(4px);
-      }
+    .fancy-image-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
     }
 
-    @keyframes bounceText {
-      0%, 100% {
-        transform: translate(-50%, 0);
-      }
-      50% {
-        transform: translate(-50%, 5px);
-      }
+    .fancy-image-grid img:hover {
+      transform: scale(1.05);
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <div class="scroll-indicator">Scroll down</div>
+  <div class="fancy-image-grid">
+    <img src="https://via.placeholder.com/300x200?text=1" alt="">
+    <img src="https://via.placeholder.com/300x200?text=2" alt="">
+    <img src="https://via.placeholder.com/300x200?text=3" alt="">
+    <img src="https://via.placeholder.com/300x200?text=4" alt="">
+    <img src="https://via.placeholder.com/300x200?text=5" alt="">
+    <img src="https://via.placeholder.com/300x200?text=6" alt="">
+    <img src="https://via.placeholder.com/300x200?text=7" alt="">
+    <img src="https://via.placeholder.com/300x200?text=8" alt="">
+    <img src="https://via.placeholder.com/300x200?text=9" alt="">
+    <img src="https://via.placeholder.com/300x200?text=10" alt="">
+    <img src="https://via.placeholder.com/300x200?text=11" alt="">
+  </div>
 
 </body>
 </html>
