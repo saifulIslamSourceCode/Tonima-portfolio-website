@@ -3,7 +3,8 @@
 A clean, modern, and responsive website built for showcasing fashion collections and designer portfolio — crafted with HTML, CSS, and JavaScript.
 
 ## 🌐 Live Demo  
-[👉 View the Website](https://tonima-akter.netlify.app/)
+[👉 View the Website Netlify](https://tonima-akter.netlify.app/)
+[👉 View the Website Vercel](https://tonima-portfolio-website.vercel.app/)
 
 ---
 
