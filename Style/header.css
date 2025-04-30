@@ -1,245 +1,246 @@
 header {
-    position: absolute;
-    /* padding: 1rem 0; */
-    width: 100%;
-    /* color: white; */
-    color: black;
-    /* font-weight: bold;     */
-    z-index: 10;
-    /* opacity: 0; */
-  }
-  .head_div {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin: auto;
-  }
-  .menu_btn {
-    position: absolute;
-    left: 4rem;
-    top: 0rem;
-    opacity: 0;
-    pointer-events: none; /* Can't click hidden buttons */
-    transition: opacity 0.3s ease;
-    border: none;
-    background: none;
-  }
-  .menu_btn_click {
-    opacity: 1 !important;
-    pointer-events: auto; /* Can click visible buttons */
-    transition: 0.5s;
-  }
-  .no-style {list-style: none;margin: 0;padding: 0;margin: 17px 0;}
-  .links-ul {
-    text-align: right;
-    width: 100%;
-    padding-top: 7px;
-    transition: 1s;
-  }
-  .fix-ul {
-    padding: 0;
-    width: 100%;
-  }
-  .nav {
-    color: white;
-  }
-  /* ````````````side nav``````````````` */
-  .side_bar_div {
-    
+  position: absolute;
+  padding: 1.3rem 0 1.3rem 0px;
   width: 100%;
-    
-  /* margin-top: 1rem; */
-  }
-  .side_bar_div_img {
-    
-  }
-  .side_nav_div {
-    width: 35%;
-    background: #ffffff;
-    position: absolute;
-    top: 3.3rem;
-    height: 100vh;
-    overflow: scroll;
-    white-space: nowrap;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: 0.3s;
-    opacity: 0;
-  }
-  .side_nav_div_visible {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-  .side_nav {
-    
-  width: 78%;
-    
+  /* color: white; */
+  color: black;
+  /* font-weight: bold;     */
+  z-index: 10;
+  /* opacity: 0; */
+}
+.head_div {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
   margin: auto;
-    
-  margin-top: 3rem;
-    
-  margin: 4rem 0 4rem 6rem;
-    
-  overflow: auto;
-  }
-  .side_li {
+}
+.menu_btn {
+  position: absolute;
+  left: 4rem;
+  top: 0rem;
+  opacity: 0;
+  pointer-events: none; /* Can't click hidden buttons */
+  transition: opacity 0.3s ease;
+  border: none;
+  background: none;
+}
+.menu_btn_click {
+  opacity: 1 !important;
+  pointer-events: auto; /* Can click visible buttons */
+  transition: 0.5s;
+}
+.no-style {list-style: none;margin: 0;padding: 0;/* margin: 17px 0; */}
+.links-ul {
+  text-align: right;
+  width: 100%;
+  /* padding-top: 7px; */
+  transition: 1s;
+  /* margin-right: 141px; */
+}
+.fix-ul {
+  /* padding: 0; */
+  width: 100%;
+  margin: 0;
+}
+.nav {
+  color: white;
+}
+/* ````````````side nav``````````````` */
+.side_bar_div {
   
-  padding-bottom: 3rem;
-  }
-  .side_nav_a {
-    position: relative;
-    background: none;
-    border: none;
-    font-size: 20px;
-    padding: 10px;
-    cursor: pointer;
-    color: black;
-    overflow: hidden;
+width: 100%;
   
-  /* display: inline-block; */
-  }
-  .side_nav_a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 1px;
-    background: rgb(0, 0, 0);
-    transition: width 0.5s ease;
-  }
-  .side_nav_a:hover::after {
-    width: 100%;
-  }
-  .block_right_div {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    right: 0px;
-    top: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    opacity: 0;
-    transition: 0.3s;
-    background-color: #000000;
-    opacity: 0.8;
-    z-index: -1;
-  }
-  .block_right_div_visible {
-    transform: scaleX(1);
-    opacity: 0.5;
-  }
-  /* js */
-  .black {
-    /* color: black; */
-    /* text-shadow: 0 0 3px #ffffff; */
-  }
-  .side_bar_Scroll_indicator {
-    bottom: 300px !important;
-  }
-  .fixed {
-    background-image: url("../Media/header bg.png");
-    background-size: cover; /* Makes it cover the entire area */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat;
-    position: fixed;
-    background-color: white;
-    z-index: 3;
-    width: 100%;
-    transition: 0.8s;
-    opacity: 1;
-  }
+/* margin-top: 1rem; */
+}
+.side_bar_div_img {
   
+}
+.side_nav_div {
+  width: 35%;
+  background: #ffffff;
+  position: absolute;
+  top: 3.3rem;
+  height: 100vh;
+  overflow: scroll;
+  white-space: nowrap;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
+  opacity: 0;
+}
+.side_nav_div_visible {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.side_nav {
   
-  a {
-    all: unset; /* Removes all inherited and default styles */
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Uses the parentÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s text color */
-    cursor: pointer; /* Keeps the clickable behavior */
-    /* text-shadow: 0 0 3px black; */
-  }
-  .underline {
-    text-decoration: underline;
-  }
-  button {
-    background: none;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-    margin: 0;
-    font: inherit;
-    color: inherit;
-    outline: none;
-    cursor: pointer;
-    appearance: none;
-  }
+width: 78%;
   
-  /* Clean hover/focus/active states */
-  button:hover,
-  button:focus,
-  button:active {
-    background: none;
-    border: none;
-    box-shadow: none;
-    outline: none;
-  }
-  button img {
-    display: block;
-    pointer-events: none; /* ensures the image doesnâ€™t block button clicks */
-  }
+margin: auto;
   
-  .active {
-    color: #0ef;
-  }
+margin-top: 3rem;
   
-  .links-ul > li {
-    display: inline;
-    padding: 0 1rem;
-  }
+margin: 4rem 0 4rem 6rem;
+  
+overflow: auto;
+}
+.side_li {
 
-  
+padding-bottom: 3rem;
+}
+.side_nav_a {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  overflow: hidden;
+
+/* display: inline-block; */
+}
+.side_nav_a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: rgb(0, 0, 0);
+  transition: width 0.5s ease;
+}
+.side_nav_a:hover::after {
+  width: 100%;
+}
+.block_right_div {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: #000000;
+  opacity: 0.8;
+  z-index: -1;
+}
+.block_right_div_visible {
+  transform: scaleX(1);
+  opacity: 0.5;
+}
+/* js */
+.black {
+  /* color: black; */
+  /* text-shadow: 0 0 3px #ffffff; */
+}
+.side_bar_Scroll_indicator {
+  bottom: 300px !important;
+}
+.fixed {
+  background-image: url("../Media/header bg.png");
+  background-size: cover; /* Makes it cover the entire area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  position: fixed;
+  background-color: #873a3a;
+  z-index: 3;
+  width: 100%;
+  transition: 0.8s;
+  /* opacity: 1; */
+}
+
+
+a {
+  all: unset; /* Removes all inherited and default styles */
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Uses the parentÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s text color */
+  cursor: pointer; /* Keeps the clickable behavior */
+  /* text-shadow: 0 0 3px black; */
+}
+.underline {
+  text-decoration: underline;
+}
+button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+/* Clean hover/focus/active states */
+button:hover,
+button:focus,
+button:active {
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+button img {
+  display: block;
+  pointer-events: none; /* ensures the image doesnâ€™t block button clicks */
+}
+
+.active {
+  color: #0ef;
+}
+
+.links-ul > li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+
 
 .scroll-indicator {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 16px;
-    color: #ffffff;
-    text-align: center;
-    animation: bounceText 2s infinite;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  animation: bounceText 2s infinite;
+}
+
+.scroll-indicator::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 8px auto 0;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: rotate(45deg);
+  animation: bounceArrow 1.5s infinite;
+}
+
+@keyframes bounceArrow {
+  0%, 20%, 50%, 80%, 100% {
+    transform: rotate(45deg) translateY(0);
   }
-  
-  .scroll-indicator::after {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    margin: 8px auto 0;
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    transform: rotate(45deg);
-    animation: bounceArrow 1.5s infinite;
+  40% {
+    transform: rotate(45deg) translateY(6px);
   }
-  
-  @keyframes bounceArrow {
-    0%, 20%, 50%, 80%, 100% {
-      transform: rotate(45deg) translateY(0);
-    }
-    40% {
-      transform: rotate(45deg) translateY(6px);
-    }
-    60% {
-      transform: rotate(45deg) translateY(4px);
-    }
+  60% {
+    transform: rotate(45deg) translateY(4px);
   }
-  
-  @keyframes bounceText {
-    0%, 100% {
-      transform: translate(-50%, 0);
-    }
-    50% {
-      transform: translate(-50%, 5px);
-    }
+}
+
+@keyframes bounceText {
+  0%, 100% {
+    transform: translate(-50%, 0);
   }
-  
+  50% {
+    transform: translate(-50%, 5px);
+  }
+}
