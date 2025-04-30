@@ -661,7 +661,7 @@ border-radius: 15px;
 
 /* ``````````````````````section 3``````````````````````````` */
 .skills_section {
-  background-image: url('../Media/skill\ bg.jpg');
+  background-image: url('../Media/skill\ bg.webp');
   background-size: cover;      /* Makes the image cover the entire element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating the image */
