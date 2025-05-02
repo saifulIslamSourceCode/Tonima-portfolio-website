@@ -3,7 +3,7 @@
       { "source": "/", "destination": "/index.html" },
       { "source": "/editorial-fashion-shots", "destination": "/pages/editorial-fashion-shots.html" },
       { "source": "/university-projects", "destination": "/pages/university-projects.html" },
-      { "source": "/sketche", "destination": "/pages/sketche.html" },
+      { "source": "/sketche", "destination": "/pages/sketch.html" },
       { "source": "/techpack", "destination": "/pages/techpack.html" },
       { "source": "/mood-board", "destination": "/pages/mood-board.html" },
       { "source": "/photography", "destination": "/pages/photography.html" }
