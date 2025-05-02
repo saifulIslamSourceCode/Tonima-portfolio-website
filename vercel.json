@@ -1,7 +1,7 @@
 {
     "rewrites": [
-      { "source": "/", "destination": "/index.html" },
-      { "source": "/editorial-fashion-shots", "destination": "/pages/editorial-fashion-shots.html" },
+      { "source": "/home", "destination": "/index.html" },
+      { "source": "/editorial-fashion-shots", "destination": "/pages/lalon-geetee.html" },
       { "source": "/university-projects", "destination": "/pages/university-projects.html" },
       { "source": "/sketches", "destination": "/pages/sketch.html" },
       { "source": "/techpack", "destination": "/pages/techpack.html" },
