@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/home", "destination": "/index.html" },
+      { "source": "/", "destination": "/index.html" },
       { "source": "/editorial-fashion-shots", "destination": "/pages/lalon-geetee.html" },
       { "source": "/university-projects", "destination": "/pages/university-projects.html" },
       { "source": "/sketches", "destination": "/pages/sketch.html" },
