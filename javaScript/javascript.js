@@ -8,12 +8,15 @@ console.log(btns[0])
 
 
 btns[0].addEventListener("click", ()=> {
+  //remove clicked class from all
   btns.forEach((b)=> b.classList.remove("menu_btn_click"));
+
   btns[1].classList.add("menu_btn_click");
+  btns[1].style.left = "38rem"
   sideBar.classList.add("side_nav_div_visible");
   document.body.style.overflow = "hidden";
   rightSideBlock.classList.add("block_right_div_visible");
-  Pageheader.style.backgroundClip = "#541d09"
+  // Pageheader.style.backgroundClip = "#541d09"
   
 });
 function removeSideBar() {
@@ -24,6 +27,7 @@ function removeSideBar() {
   rightSideBlock.classList.remove("block_right_div_visible");
 }
 btns[1].addEventListener("click", ()=> {
+  btns[1].style.left = "4rem"
   removeSideBar();
 });
 
@@ -87,12 +91,12 @@ window.addEventListener('DOMContentLoaded', updateSlider);
 
     if(window.scrollY >= targetHeight) {
       // navLinks.forEach(links => links.classList.add("black"));
-      ulDiv.classList.add("fix-ul");
+      // ulDiv.classList.add("fix-ul");
       Pageheader.classList.add("fixed");
     } else {
       // navLinks.forEach(links => links.classList.remove("black"));
       Pageheader.classList.remove("fixed");
-      ulDiv.classList.remove("fix-ul");
+      // ulDiv.classList.remove("fix-ul");
 
     }
   });
@@ -228,4 +232,3 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 lalon-geetee page
 
  */
-
