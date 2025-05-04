@@ -61,7 +61,10 @@ function initHeaderMenu() {
     if(window.scrollY >= targetHeight) {
       // navLinks.forEach(links => links.classList.add("black"));
       // ulDiv.classList.add("fix-ul");
-      Pageheader.classList.add("fixed");
+      if(window.innerWidth > 768) {
+        Pageheader.classList.add("fixed");
+      }
+      
     } else {
       // navLinks.forEach(links => links.classList.remove("black"));
       Pageheader.classList.remove("fixed");
