@@ -8,5 +8,5 @@
       { "source": "/mood-board", "destination": "/pages/mood-board.html" },
       { "source": "/photography", "destination": "/pages/photography.html" }
     ]
-  }
+}
   
