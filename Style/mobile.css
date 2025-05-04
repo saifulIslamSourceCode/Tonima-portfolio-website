@@ -24,8 +24,32 @@
         width: 60px;
     }
     .menu_btn {
-        top: 1rem;
+        top: 0.5rem;
         left: 1rem;
+    }
+    .dresses_div_Parent {
+        display: none;
+    }
+    .magazin_section {
+        display: block;
+        padding-top: 1rem;
+        margin-top: 0;
+    }
+    .magazin > img {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .works-texts {
+        margin-left: 0;
+        /* padding: 0 10px; */
+        text-align: left;
+    }
+    .cursive_text {
+        letter-spacing: 0;
+    }
+    .btn-grad {
+        margin: 0;
     }
     
   }
