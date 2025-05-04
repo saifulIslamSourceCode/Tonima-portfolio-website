@@ -18,8 +18,14 @@
           font-family: Arial, sans-serif;
           background: linear-gradient(90deg, rgba(250, 242, 255, 1) 7%, rgba(252, 232, 255, 1) 22%, rgba(255, 214, 228, 1) 41%, rgba(255, 219, 219, 1) 59%, rgba(255, 240, 230, 1) 79%, rgba(255, 230, 230, 1) 100%);
         }
+        header {
+          padding: 1.6rem 0;
+          background-color: #541d09;
+
+        }
         body.noscroll {
           overflow: hidden;
+          padding: 1.6rem 0;
         }
         section {
             padding-top: 5rem;
@@ -94,11 +100,12 @@
         }
     </style>
     <link rel="stylesheet" href="../Style/header.css">
+    <link rel="stylesheet" href="../Style/footer.css">
 
-    <title>Sketch</title>
+    <title>Sketches</title>
 </head>
 <body>
-    <header id="Pageheader" class="PageheaderClass" style="padding-bottom: 2rem; background-color: #541d09;">
+    <header id="Pageheader" class="PageheaderClass" style="">
         <!-- fetch -->
     </header>
 
@@ -128,6 +135,8 @@
       <img id="popupImg" src="" alt="Popup Image">
     </div>
 
+
+
     <script>
       let gridItems = document.querySelectorAll(".grid_item");
       let popup = document.getElementById("popup");
@@ -155,15 +164,14 @@
       });
 
 
-//fetch header
-fetch("../components/header.html")
-  .then(response => response.text())
-  .then(data => {
-      document.getElementById("Pageheader").innerHTML = data;
-})
 
 </script>
 
+<footer id="pageFooter">
+  <!-- fetch footer -->
+</footer>
+
 <script src="../javaScript/header.js" defer></script>
+
 </body>
 </html>

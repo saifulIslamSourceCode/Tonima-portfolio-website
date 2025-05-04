@@ -19,6 +19,10 @@
         background: linear-gradient(90deg, rgba(250, 242, 255, 1) 7%, rgba(252, 232, 255, 1) 22%, rgba(255, 214, 228, 1) 41%, rgba(255, 219, 219, 1) 59%, rgba(255, 240, 230, 1) 79%, rgba(255, 230, 230, 1) 100%);
           
         }
+        header {
+          padding: 1.6rem 0;
+          background-color: #541d09;
+        }
         body.noscroll {
           overflow: hidden;
         }
@@ -104,7 +108,7 @@
         }
 
         .grid::-webkit-scrollbar-thumb {
-            background: #ad572f; /* Brown-ish color for the thumb */
+            background: #541d09; /* Brown-ish color for the thumb */
             border-radius: 10px;
              /* Gives thumb some padding */
             cursor: grab;
@@ -114,8 +118,14 @@
         .grid::-webkit-scrollbar-thumb:hover {
             background: #8b4513; /* Darker on hover */
         }
+        footer {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+        }
     </style>
     <link rel="stylesheet" href="../Style/header.css">
+    <link rel="stylesheet" href="../Style/footer.css">
 
     <title>Techpack</title>
 </head>
@@ -184,6 +194,8 @@
           </div>
         </div>
       </section>
+
+
       
 
     <!-- Popup overlay -->
@@ -191,6 +203,10 @@
       <span class="close" id="closeBtn">&times;</span>
       <img id="popupImg" src="" alt="Popup Image">
     </div>
+
+    <footer id="pageFooter">
+      <!-- fetch footer -->
+     </footer>
 
     <script>
       let gridItems = document.querySelectorAll(".grid_item");
@@ -227,12 +243,12 @@
     // When mouse button is pressed down
 
 
-//fetch header
-fetch("../components/header.html")
-  .then(response => response.text())
-  .then(data => {
-      document.getElementById("Pageheader").innerHTML = data;
-})
+// //fetch header
+// fetch("../components/header.html")
+//   .then(response => response.text())
+//   .then(data => {
+//       document.getElementById("Pageheader").innerHTML = data;
+// })
 
     </script>
 

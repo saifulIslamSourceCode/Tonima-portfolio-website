@@ -5,6 +5,13 @@ fetch("../components/header.html")
     document.getElementById("Pageheader").innerHTML = data;
     initHeaderMenu(); // Activate header functionality after load
   });
+  //fetch footer
+fetch("../components/footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("pageFooter").innerHTML = data;
+});
+
 
 function initHeaderMenu() {
   let btns = document.querySelectorAll(".menu_btn");
