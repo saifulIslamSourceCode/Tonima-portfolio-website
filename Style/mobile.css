@@ -4,6 +4,9 @@
       font-size: 11px;
       overflow-x: hidden;
     }
+    .text-ontop-video > div {
+        /* font-size: 5rem; */
+    }
     .text-ontop-video {
         width: 100%;
     }
@@ -26,7 +29,7 @@
         background-color: rgba(255, 0, 0, 0);
     }
     .menu_btn img{
-        width: 60px;
+        width: 40px;
     }
     .menu_btn {
         /* position: fixed !important; */
