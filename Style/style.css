@@ -444,7 +444,7 @@ section .head {
 /* padding-top: 1rem; */
 }
 .main-content {
-  width: 90%;
+  width: 96%;
   margin: auto;
 }
 
@@ -462,7 +462,7 @@ section .head {
   font-family: 'Caveat', cursive;
   position: relative;
   top: -8rem;
-  left: 65rem;
+  left: -45rem;
   color: white;
   /* box-shadow: 1px 3px 7px 0px #dabeff; */
 }

@@ -20,13 +20,20 @@
         height: 3rem;
         width: 70%;
     }
+    header {
+        position: fixed !important;
+        /* padding: 1rem; */
+        background-color: rgba(255, 0, 0, 0);
+    }
     .menu_btn img{
         width: 60px;
     }
     .menu_btn {
+        /* position: fixed !important; */
         top: 0.5rem;
         left: 1rem;
     }
+    
     .dresses_div_Parent {
         display: none;
     }
@@ -42,7 +49,7 @@
     }
     .works-texts {
         margin-left: 0;
-        /* padding: 0 10px; */
+        padding: 0 10px;
         text-align: left;
     }
     .cursive_text {
@@ -51,5 +58,94 @@
     .btn-grad {
         margin: 0;
     }
-    
+    .techpack-parent {
+        display: block;
+    }
+    .techpack_text {
+        width: 100%; 
+        margin-top: 0;
+    }
+    .works-content {
+        padding-bottom: 2rem;
+    }
+    .slider-wrapper {
+        max-width: 100%;
+        
+    }
+    .card {
+        height: 25rem;
+    }
+    .main-content {
+        width: 98%;
+    }
+    .about-content {
+        display: block;
+    }
+    .profile-img {
+        width: 26rem;
+    }
+    .img-name {
+        left: 1rem;
+        top: -50rem;
+
+    }
+    .about-text {
+        margin-top: 0;
+        padding: 0 10px;
+    }
+    .skill-content {
+        width: 95%;
+        display: block;
+        font-size: 11px;
+    }
+    #resume_div {
+        display: block;
+        width: 95%;
+    }
+    .resume_download {
+        margin-top: 0;
+        margin-left: 5rem;
+    }
+    .contact_img {
+        width: 100%;
+    }
+    .contact_img img {
+        width: 90%;
+        left: 0rem !important;
+        margin: auto;
+        display: block;
+    }
+    .contact_div {
+        width: 100%;
+        display: block;
+        left: 0;
+        top: 0;
+    }
+    .contact_form {
+        width: 100%;
+        margin-top: 3.5rem
+    }
+    #contact {
+        height: auto;
+    }
+    .submit_btn {
+        margin-top: 0;
+    }
+    .contact_head {
+        margin-left: 1rem;
+    }
+    .contact_left {
+        padding: 0.5rem 3rem;
+        display: block;
+    }
+    .contact_info {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+    .email {
+        margin-bottom: 1rem;
+    }
+    .social_links {
+        margin-top: 0.8rem;
+    }
   }
