@@ -105,7 +105,9 @@
     }
     .resume_download {
         margin-top: 0;
-        margin-left: 5rem;
+        /* margin-left: 5rem; */
+        width: 66%;
+        margin: auto;
     }
     .contact_img {
         width: 100%;
@@ -136,17 +138,20 @@
         margin-left: 1rem;
     }
     .contact_left {
-        padding: 0.5rem 3rem;
+        padding: 0rem 0rem;
         display: block;
+        width: 85%;
+        margin: auto;
     }
     .contact_info {
         margin-left: 0;
-        margin-top: 3rem;
+        margin-top: 2.5rem;
     }
     .email {
         margin-bottom: 1rem;
     }
     .social_links {
         margin-top: 0.8rem;
+        padding-bottom: 0.8rem;
     }
   }
