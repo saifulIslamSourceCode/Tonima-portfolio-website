@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+    /* home page */
+    body {
+      font-size: 11px;
+      overflow-x: hidden;
+    }
+    .text-ontop-video {
+        width: 100%;
+    }
+    .quote {
+        margin: 0;
+        padding: 0;
+    }
+    .logos {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 113px;
+        justify-content: space-evenly;
+        height: 3rem;
+        width: 70%;
+    }
+    .menu_btn img{
+        width: 60px;
+    }
+    .menu_btn {
+        top: 1rem;
+        left: 1rem;
+    }
+    
+  }
