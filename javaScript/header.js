@@ -56,7 +56,7 @@ function initHeaderMenu() {
     let ulDiv = document.querySelector(".links-ul");
     let navLinks = document.querySelectorAll(".nav");
     let Pageheader = document.getElementById('Pageheader');
-    let targetHeight = window.innerHeight * 0.2;
+    let targetHeight = window.innerHeight * 0.1;
 
     if(window.scrollY >= targetHeight) {
       // navLinks.forEach(links => links.classList.add("black"));

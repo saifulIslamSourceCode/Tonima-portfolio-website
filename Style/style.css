@@ -258,7 +258,7 @@ section:nth-child(odd) {
   position: absolute;
   z-index: 2;
   color: #000000;
-  top: 41rem;
+  top: 40rem;
   /* text-align: center; */
   align-items: center;
   left: 8rem;
@@ -429,7 +429,7 @@ section .head {
   text-align: center;
   padding-top: 25px;
   font-family: "Playfair Display", serif;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 #about {
 
@@ -535,7 +535,7 @@ border-radius: 15px;
   /* background-color: rgba(255, 255, 255, 0.2); */
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 3px 27px gray;
+  box-shadow: 0 3px 7px gray;
   border-radius: 10px;
   padding: 20px;
   margin: 2rem 0;
