@@ -162,23 +162,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
 // Wait for the DOM to load before binding the event
 // Wait for the DOM to load before binding the event
 document.addEventListener("DOMContentLoaded", function() {
-  // Grab the preloader and button
   const preloader = document.getElementById('preloader');
   const startBtn = document.getElementById('startBtn');
 
-  // Check if the button exists (in case DOM hasn't loaded properly)
+  console.log('Start Button:', startBtn);  // Log for debugging
+  console.log('Preloader:', preloader);  // Log for debugging
+
   if (startBtn) {
-    // Button click event
     startBtn.addEventListener('click', function() {
-      // Fade out preloader smoothly
+      console.log("Button clicked"); // Debugging log to see if click is detected
+
+      // Fade out the preloader smoothly
+      preloader.style.transition = 'opacity 1s';  // Smooth transition
       preloader.style.opacity = '0';
 
-      // Wait for the fade out transition to complete, then hide the preloader
+      // Wait for the fade-out to finish before hiding the preloader
       setTimeout(function() {
-        preloader.style.display = 'none'; // Hide the preloader after fade-out
-      }, 1000); // Match this time with the CSS transition duration
+        preloader.style.display = 'none';  // Hide preloader after fade-out
+      }, 1000); // Match the time with the CSS transition duration (1s)
     });
   } else {
-    console.log('Start button not found!');
+    console.log('Button not found!');
   }
 });
