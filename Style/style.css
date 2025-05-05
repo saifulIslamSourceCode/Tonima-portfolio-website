@@ -211,7 +211,7 @@ section {
   line-height: 26px;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
   background-color:#fffaf0;
 }
 
