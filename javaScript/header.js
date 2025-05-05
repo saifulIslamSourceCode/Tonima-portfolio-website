@@ -143,12 +143,12 @@ const preloader = document.getElementById('preloader');
 
 function hidePreloader() {
   preloader.classList.add('hide');
+  document.body.classList.add('loaded'); // fade in the page
   setTimeout(() => {
     preloader.style.display = 'none';
-  }, 500);
+  }, 800); // matches transition time
 }
 
-// Use requestAnimationFrame to ensure page is painted
 function onReady(callback) {
   if (document.readyState !== 'loading') {
     callback();
@@ -163,6 +163,5 @@ onReady(() => {
   });
 });
 
-// As backup: if page is already loaded
 window.addEventListener('load', hidePreloader);
 

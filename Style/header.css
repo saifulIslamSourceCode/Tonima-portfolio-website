@@ -317,7 +317,6 @@ button img {
 
 }
 
-/* Preloader styling */
 /* Preloader Base */
 #preloader {
   position: fixed;
@@ -330,7 +329,7 @@ button img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 /* Hiding animation */
@@ -338,4 +337,15 @@ button img {
   opacity: 0;
   transform: scale(0.8);
   pointer-events: none;
+}
+
+/* Fade in the body */
+body {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+/* When ready, body becomes visible */
+body.loaded {
+  opacity: 1;
 }
