@@ -887,7 +887,7 @@ margin: auto;
 padding-bottom: 1rem;
   }
   footer {
-    position: static;
+    position: static !important;
   }
 
 
