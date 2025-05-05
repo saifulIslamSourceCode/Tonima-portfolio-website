@@ -139,12 +139,24 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 ///preloder
+
+document.addEventListener('DOMContentLoaded', function() {
+  const preloader = document.getElementById('preloader');
+
+  // Fallback: hide after 3 seconds max
+  setTimeout(() => {
+    preloader.classList.add('hide');
+    setTimeout(() => {
+      preloader.style.display = 'none';
+    }, 500);
+  }, 3000);
+});
+
 window.addEventListener('load', function() {
   const preloader = document.getElementById('preloader');
-  preloader.style.transition = 'opacity 0.5s ease';
-  preloader.style.opacity = '0';
+  preloader.classList.add('hide');
   setTimeout(() => {
     preloader.style.display = 'none';
-  }, 500); // matches transition
+  }, 500);
 });
-  
+
