@@ -273,3 +273,46 @@ button img {
    color: #fff;
    text-decoration: none;
  }
+
+
+@media (max-width: 768px) {
+
+  
+  header {
+    background-image: url("../Media/header bg.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    background-color: #873a3a;
+    z-index: 3;
+    width: 100%;
+    transition: 0.8s;
+    /* opacity: 1; */
+    padding: 1.6rem 0px;
+  }
+  .menu_btn img{
+    width: 40px;
+}
+  .menu_btn {
+    /* position: fixed !important; */
+    top: 0.5rem;
+    left: 1rem;
+}
+.side_nav_div {
+  width: 100%;
+}
+.side_nav {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+.no-style {
+  margin: 0;
+}
+.side_li {
+  padding-bottom: 35px;
+}
+
+
+}
