@@ -211,12 +211,13 @@ section {
   line-height: 26px;
 }
 
-section:nth-child(even) {
+/* section:nth-child(even) {
   background-color:#fffaf0;
-}
+} */
 
 /* ``````````````section Work````````````````````````````````` */
 #works {
+  background-color: #fffaf0;
   /* background-image: url('../Media/work-img.JPG'); 
   background-size: cover; 
   background-position: center;
