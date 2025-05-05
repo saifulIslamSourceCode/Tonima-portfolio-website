@@ -139,29 +139,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 ///preloder
-const preloader = document.getElementById('preloader');
-
-function hidePreloader() {
+window.addEventListener('load', () => {
+  // Hide preloader
+  const preloader = document.getElementById('preloader');
   preloader.classList.add('hide');
-  document.body.classList.add('loaded'); // fade in the page
+
+  // Optional: fade in the body (if you want)
+  document.body.classList.remove('loading');
+
+  // After transition, remove preloader from DOM
   setTimeout(() => {
     preloader.style.display = 'none';
-  }, 800); // matches transition time
-}
-
-function onReady(callback) {
-  if (document.readyState !== 'loading') {
-    callback();
-  } else {
-    document.addEventListener('DOMContentLoaded', callback);
-  }
-}
-
-onReady(() => {
-  requestAnimationFrame(() => {
-    hidePreloader();
-  });
+  }, 800); // matches CSS transition
 });
-
-window.addEventListener('load', hidePreloader);
 

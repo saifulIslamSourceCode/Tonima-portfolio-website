@@ -332,20 +332,19 @@ button img {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-/* Hiding animation */
+/* Preloader hide effect */
 #preloader.hide {
   opacity: 0;
   transform: scale(0.8);
   pointer-events: none;
 }
 
-/* Fade in the body */
+/* Body fade-in safe */
 body {
-  opacity: 0;
+  opacity: 1; /* Keep body visible by default */
   transition: opacity 0.8s ease;
 }
 
-/* When ready, body becomes visible */
-body.loaded {
-  opacity: 1;
+body.loading {
+  opacity: 0;
 }
