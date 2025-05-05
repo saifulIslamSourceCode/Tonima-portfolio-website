@@ -139,17 +139,23 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 ///preloder
-window.addEventListener('load', () => {
-  // Hide preloader
+// Function to hide preloader
+function hidePreloader() {
   const preloader = document.getElementById('preloader');
   preloader.classList.add('hide');
-
-  // Optional: fade in the body (if you want)
   document.body.classList.remove('loading');
-
-  // After transition, remove preloader from DOM
   setTimeout(() => {
     preloader.style.display = 'none';
-  }, 800); // matches CSS transition
+  }, 800); // match transition
+}
+
+// When DOM is ready (safer than window.load)
+document.addEventListener('DOMContentLoaded', () => {
+  // Set a fallback timeout in case window.load doesn’t fire
+  setTimeout(hidePreloader, 1500); // fallback after 1.5s
 });
 
+// When everything (including images) is loaded
+window.addEventListener('load', () => {
+  hidePreloader(); // normal hide
+});
