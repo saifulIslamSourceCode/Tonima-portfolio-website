@@ -1,31 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="author" content="Saiful Islam">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- css -->
-        <link rel="stylesheet" href="../Style/style.css">
-        <link rel="stylesheet" href="../Style/header.css">
-        <link rel="stylesheet" href="../Style/footer.css">
-        <link rel="stylesheet" href="Style/mobile.css">
 
-        <link rel="icon" type="image/png" sizes="48x48" href="../Media/icons/icons8-fashion-100.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../Media/icons/icons8-fashion-100.png">
 
-    <title>Photography</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/header.css">
 
+    <link rel="stylesheet" href="../Style/grid.css">
+    <link rel="stylesheet" href="../Style/header.css">
+    <link rel="stylesheet" href="Style/mobile.css">
+
+    <title>Sketches</title>
 </head>
 <body>
-    <header id="Pageheader" class="PageheaderClass">
-        <!-- featched header from header.html here -->
-    </header> 
+    <header id="Pageheader" class="PageheaderClass" style="">
+        <!-- fetch -->
+    </header>
 
-    <h1>photography</h1>
+    <section>
+        <div class="sketch_main_div">
+            <div class="grid">
+                <img src="../Media/Photography/1.png" alt="Image 1" class="grid_item">
+                <img src="../Media/Photography/2.png" alt="Image 2" class="grid_item">
+                <img src="../Media/Photography/3.png" alt="Image 3" class="grid_item">
+                <img src="../Media/Photography/4.png" alt="Image 4" class="grid_item">
+                <img src="../Media/Photography/5.png" alt="Image 5" class="grid_item">
+                <img src="../Media/Photography/6.png" alt="Image 6" class="grid_item">
+                <img src="../Media/Photography/7.png" alt="Image 7" class="grid_item">
+                <img src="../Media/Photography/8.png" alt="Image 8" class="grid_item">
+                <img src="../Media/Photography/9.png" alt="Image 9" class="grid_item">
+                <img src="../Media/Photography/10.png" alt="Image 10" class="grid_item">
+                <img src="../Media/Photography/11.png" alt="Image 11" class="grid_item">
+                <img src="../Media/Photography/12.png" alt="Image 12" class="grid_item">
+                <img src="../Media/Photography/13.png" alt="Image 13" class="grid_item">
+                <img src="../Media/Photography/14.png" alt="Image 14" class="grid_item">
+                <img src="../Media/Photography/15.png" alt="Image 15" class="grid_item">
+                <img src="../Media/Photography/16.png" alt="Image 16" class="grid_item">
+                <img src="../Media/Photography/17.png" alt="Image 17" class="grid_item">
+                <img src="../Media/Photography/18.png" alt="Image 18" class="grid_item">
+                <img src="../Media/Photography/19.png" alt="Image 19" class="grid_item">
+                <img src="../Media/Photography/20.png" alt="Image 20" class="grid_item">
+                <img src="../Media/Photography/21.png" alt="Image 21" class="grid_item">
+                <img src="../Media/Photography/22.png" alt="Image 22" class="grid_item">
+                <img src="../Media/Photography/23.png" alt="Image 23" class="grid_item">
+                <img src="../Media/Photography/24.png" alt="Image 24" class="grid_item">
+                <img src="../Media/Photography/25.png" alt="Image 25" class="grid_item">
+                <img src="../Media/Photography/26.png" alt="Image 26" class="grid_item">
+                <img src="../Media/Photography/27.png" alt="Image 27" class="grid_item">
+                <img src="../Media/Photography/28.png" alt="Image 28" class="grid_item">
+                <img src="../Media/Photography/29.png" alt="Image 29" class="grid_item">
+                <img src="../Media/Photography/30.png" alt="Image 30" class="grid_item">
+                <img src="../Media/Photography/31.png" alt="Image 31" class="grid_item">
+                <img src="../Media/Photography/32.png" alt="Image 32" class="grid_item">
+                <img src="../Media/Photography/33.png" alt="Image 33" class="grid_item">
+                <img src="../Media/Photography/34.png" alt="Image 34" class="grid_item">
+                <img src="../Media/Photography/35.png" alt="Image 35" class="grid_item">
+                <img src="../Media/Photography/36.png" alt="Image 36" class="grid_item">
+                <img src="../Media/Photography/37.png" alt="Image 37" class="grid_item">
+                <img src="../Media/Photography/38.png" alt="Image 38" class="grid_item">
+                <img src="../Media/Photography/39.png" alt="Image 39" class="grid_item">
+                <img src="../Media/Photography/40.png" alt="Image 40" class="grid_item">
+                <img src="../Media/Photography/41.png" alt="Image 41" class="grid_item">
+                <img src="../Media/Photography/42.png" alt="Image 42" class="grid_item">
+                
+              </div>
+        </div>
+    </section>
+
+    <!-- Popup overlay -->
+    <div class="popup" id="popup">
+      <span class="close" id="closeBtn">&times;</span>
+      <img id="popupImg" src="" alt="Popup Image">
+    </div>
+
+  <footer id="pageFooter">
+      <!-- fetch footer -->
+  </footer>
+
+    <script>
+      let gridItems = document.querySelectorAll(".grid_item");
+      let popup = document.getElementById("popup");
+      let popupImg = document.getElementById("popupImg");
+      let closeBtn = document.getElementById("closeBtn");
+
+      gridItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          popup.classList.add("show");
+          popupImg.src = item.src;
+          document.body.classList.add("noscroll");
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        popup.classList.remove("show");
+        document.body.classList.remove("noscroll");
+      });
+
+      popup.addEventListener("click", (e) => {
+        if (e.target === popup) {
+          popup.classList.remove("show");
+          document.body.classList.remove("noscroll");
+        }
+      });
 
 
-    <footer id="pageFooter">
-        <!-- fetch footer -->
-    </footer>
 
-    <script src="../javaScript/header.js" defer></script>
+</script>
+
+<script src="../javaScript/header.js" defer></script>
 </body>
 </html>
