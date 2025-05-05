@@ -12,11 +12,11 @@ fetch("../components/footer.html")
     document.getElementById("pageFooter").innerHTML = data;
 });
 //fecth preloder
-fetch("../components/loader.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("preloder_div").innerHTML = data;
-});
+// fetch("../components/loader.html")
+//   .then(response => response.text())
+//   .then(data => {
+//     document.getElementById("preloder_div").innerHTML = data;
+// });
 
 function initHeaderMenu() {
   let btns = document.querySelectorAll(".menu_btn");
@@ -139,49 +139,23 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 ///preloder
-// Function to hide preloader
-// function hidePreloader() {
-//   const preloader = document.getElementById('preloader');
-//   preloader.classList.add('hide');
-//   document.body.classList.remove('loading');
-//   setTimeout(() => {
-//     preloader.style.display = 'none';
-//   }, 800); // match transition
-// }
-
-// // When DOM is ready (safer than window.load)
-// document.addEventListener('DOMContentLoaded', () => {
-//   // Set a fallback timeout in case window.load doesn’t fire
-//   setTimeout(hidePreloader, 1500); // fallback after 1.5s
-// });
-
-// // When everything (including images) is loaded
-// window.addEventListener('load', () => {
-//   hidePreloader(); // normal hide
-// });
-// Wait for the DOM to load before binding the event
-// Wait for the DOM to load before binding the event
-document.addEventListener("DOMContentLoaded", function() {
+function hidePreloader() {
   const preloader = document.getElementById('preloader');
-  const startBtn = document.getElementById('startBtn');
+  preloader.classList.add('hide');
+  document.body.classList.remove('loading');
+  setTimeout(() => {
+    preloader.style.display = 'none';
+  }, 800); // match transition
+}
 
-  console.log('Start Button:', startBtn);  // Log for debugging
-  console.log('Preloader:', preloader);  // Log for debugging
-
-  if (startBtn) {
-    startBtn.addEventListener('click', function() {
-      console.log("Button clicked"); // Debugging log to see if click is detected
-
-      // Fade out the preloader smoothly
-      preloader.style.transition = 'opacity 1s';  // Smooth transition
-      preloader.style.opacity = '0';
-
-      // Wait for the fade-out to finish before hiding the preloader
-      setTimeout(function() {
-        preloader.style.display = 'none';  // Hide preloader after fade-out
-      }, 1000); // Match the time with the CSS transition duration (1s)
-    });
-  } else {
-    console.log('Button not found!');
-  }
+// When DOM is ready (safer than window.load)
+document.addEventListener('DOMContentLoaded', () => {
+  // Set a fallback timeout in case window.load doesn’t fire
+  setTimeout(hidePreloader, 1500); // fallback after 1.5s
 });
+
+// When everything (including images) is loaded
+window.addEventListener('load', () => {
+  hidePreloader(); // normal hide
+});
+
