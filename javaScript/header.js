@@ -140,22 +140,25 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 ///preloder
 // Function to hide preloader
-function hidePreloader() {
-  const preloader = document.getElementById('preloader');
-  preloader.classList.add('hide');
-  document.body.classList.remove('loading');
-  setTimeout(() => {
-    preloader.style.display = 'none';
-  }, 800); // match transition
-}
+// function hidePreloader() {
+//   const preloader = document.getElementById('preloader');
+//   preloader.classList.add('hide');
+//   document.body.classList.remove('loading');
+//   setTimeout(() => {
+//     preloader.style.display = 'none';
+//   }, 800); // match transition
+// }
 
-// When DOM is ready (safer than window.load)
-document.addEventListener('DOMContentLoaded', () => {
-  // Set a fallback timeout in case window.load doesn’t fire
-  setTimeout(hidePreloader, 1500); // fallback after 1.5s
-});
+// // When DOM is ready (safer than window.load)
+// document.addEventListener('DOMContentLoaded', () => {
+//   // Set a fallback timeout in case window.load doesn’t fire
+//   setTimeout(hidePreloader, 1500); // fallback after 1.5s
+// });
 
-// When everything (including images) is loaded
-window.addEventListener('load', () => {
-  hidePreloader(); // normal hide
+// // When everything (including images) is loaded
+// window.addEventListener('load', () => {
+//   hidePreloader(); // normal hide
+// });
+document.getElementById("startButton").addEventListener("click", function() {
+  document.getElementById("preloader").style.display = "none";
 });
