@@ -15,7 +15,7 @@ fetch("../components/footer.html")
 fetch("../components/loader.html")
   .then(response => response.text())
   .then(data => {
-    document.getElementById("preloder").innerHTML = data;
+    document.getElementById("preloder_div").innerHTML = data;
 });
 
 function initHeaderMenu() {
@@ -139,24 +139,30 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 ///preloder
+const preloader = document.getElementById('preloader');
 
-document.addEventListener('DOMContentLoaded', function() {
-  const preloader = document.getElementById('preloader');
-
-  // Fallback: hide after 3 seconds max
-  setTimeout(() => {
-    preloader.classList.add('hide');
-    setTimeout(() => {
-      preloader.style.display = 'none';
-    }, 500);
-  }, 3000);
-});
-
-window.addEventListener('load', function() {
-  const preloader = document.getElementById('preloader');
+function hidePreloader() {
   preloader.classList.add('hide');
   setTimeout(() => {
     preloader.style.display = 'none';
   }, 500);
+}
+
+// Use requestAnimationFrame to ensure page is painted
+function onReady(callback) {
+  if (document.readyState !== 'loading') {
+    callback();
+  } else {
+    document.addEventListener('DOMContentLoaded', callback);
+  }
+}
+
+onReady(() => {
+  requestAnimationFrame(() => {
+    hidePreloader();
+  });
 });
+
+// As backup: if page is already loaded
+window.addEventListener('load', hidePreloader);
 
