@@ -299,6 +299,9 @@ button img {
     top: 0.5rem;
     left: 1rem;
 }
+.side_bar_Scroll_indicator {
+  top: 42% !important;
+}
 .side_nav_div {
   width: 100%;
 }
