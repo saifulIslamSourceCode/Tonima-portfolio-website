@@ -899,19 +899,20 @@ padding-bottom: 1rem;
 /* For laptops and tablets */
 @media (max-width: 1400px) { 
   .works-texts {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     text-align: left;
   }
   .resume_download {
     margin-left: 3rem;
 }
 .contact_img img {
-  width: 100%;
+  width: 99%;
   position: static;
 }
 .contact_img {
-  width: 27%;
-  margin-top: 0.7rem;
+  width: 80%;
+  margin: auto;
+  padding-top: 1rem;
 }
 .contact_div {
   justify-content: space-evenly;
