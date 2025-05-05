@@ -492,7 +492,7 @@ border-radius: 15px;
 }
 .dress_info {
   text-align: justify;
-  /* width: 48%; */
+  width: 48%;
   /* margin-top: 5rem; */
 }
 .Sunset_tonima {
@@ -862,7 +862,7 @@ width: 1.5rem;
 
   /* ``````````````````university projects``````````````````` */
   .university_main_div {
-    position: static;
+    position: static !important;
     width: 98%;
     margin: auto;
     /* margin-top: 4rem; */
