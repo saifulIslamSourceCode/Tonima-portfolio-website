@@ -897,7 +897,7 @@ padding-bottom: 1rem;
 }
 
 /* For laptops and tablets */
-@media (max-width: 1400px) { 
+@media (max-width: 1500px) { 
   .works-texts {
     /* margin-left: 1rem; */
     text-align: left;
