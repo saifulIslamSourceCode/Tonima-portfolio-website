@@ -144,7 +144,12 @@ function hidePreloader() {
   preloader.classList.add('hide');
   document.body.classList.remove('loading');
   setTimeout(() => {
-    preloader.style.display = 'none';
+    // preloader.style.transform = 'scaleX(0)';
+    // preloader.style.transformOrigin = 'left';
+    // preloader.style.display = 'none';
+    preloader.style.width = "0%";
+    preloader.style.opacity = "0"
+
   }, 800); // match transition
 }
 
