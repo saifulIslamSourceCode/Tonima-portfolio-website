@@ -924,5 +924,13 @@ padding-bottom: 1rem;
 .contact_info {
   margin-left: 0;
 }
-
+.dress_name {
+  top: -6rem;
+  left: 0rem;
+  text-align: center;
+}
+.dress_name p {
+  text-align: center;
+  
+}
 }
