@@ -910,9 +910,9 @@ padding-bottom: 1rem;
   position: static;
 }
 .contact_img {
-  width: 80%;
+  width: 27%;
   margin: auto;
-  padding-top: 1rem;
+  padding-top: 0rem;
 }
 .contact_div {
   justify-content: space-evenly;
