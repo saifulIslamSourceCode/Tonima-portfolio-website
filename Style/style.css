@@ -925,12 +925,15 @@ padding-bottom: 1rem;
   margin-left: 0;
 }
 .dress_name {
-  top: 29rem;
-  left: 0rem;
+  top: 30rem;
+  left: 5rem !important;
   text-align: center;
 }
 .dress_name p {
   text-align: center;
 
+}
+.dress_name1 {
+  left: 2rem !important;
 }
 }
