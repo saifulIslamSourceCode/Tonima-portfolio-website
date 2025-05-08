@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 header {
   position: absolute;
   /* padding: 1.3rem 0 1rem 0px; */

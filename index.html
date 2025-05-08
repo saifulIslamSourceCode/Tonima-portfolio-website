@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- logo in tab -->
     <link rel="icon" type="image/png" sizes="48x48" href="Media/icons/icons8-fashion-100.png">
 
@@ -167,11 +170,11 @@
                 <div class="magazin_section">
 
                     <div class="magazin">
-                        <img loading="lazy" src="Media/preview-min.jpg" alt="">
+                        <img loading="lazy" src="Media/preview-min.jpg" alt="" data-aos="fade-right">
                     </div>
 
                     <!-- topic and btn -->
-                    <div class="works-texts">
+                    <div class="works-texts" data-aos="fade-left">
                         <p class="cursive_text" style="color: black;">
                         LALON GETEE (লালনগীতি)
                         </p>
@@ -203,7 +206,7 @@
                 
                 <div class="techpack-parent">
 
-                                        <div class="techpack_text">
+                    <div class="techpack_text" data-aos="fade-right">
 
                         <div class="works-texts">
                             <p>
@@ -223,7 +226,7 @@
 
                     </div>
                     
-                    <div class="slider-wrapper" id="sliderWrapper">
+                    <div class="slider-wrapper" id="sliderWrapper" data-aos="fade-left">
                         <div class="works-content-img slider" id="slider">
                             <img loading="lazy" src="Media/techpack 1.jpg" alt="model image" class="work-image card">
                             <img loading="lazy" src="Media/techpack 2.jpg" alt="model image" class="work-image card">
@@ -254,10 +257,10 @@
             <div class="main-content">
                 <div class="about-content ">
                     <div class="profile-img-div">
-                        <img src="Media/profile-img.jpg" alt="Profile image" class="profile-img">
+                        <img src="Media/profile-img.jpg" alt="Profile image" class="profile-img" data-aos="fade-right">
                     </div>
 
-                    <div class="about-text">
+                    <div class="about-text" data-aos="fade-left">
                         <p><strong>Fashion isn’t just what we wear—it’s how we express who we are.</strong> It’s art, emotion, and storytelling woven together with threads of creativity and purpose.</p>
 
                         <p>As a passionate fashion designer, I don’t just follow trends—I create meaningful pieces that empower, inspire, and reflect individuality. Every design is a chance to spark confidence and turn everyday moments into runway-worthy statements. ✨</p>
@@ -270,18 +273,18 @@
 
                         <p>Let’s create something extraordinary—<em>where elegance meets conscience, and fashion tells a story worth remembering.</em> 🌿💫</p>
                         
-                        <span class="img-name">Tonima Akter</span>
+                        <span class="img-name" data-aos="fade-up">Tonima Akter</span>
                     </div>
                 </div>
                                  
             </div>
         </section>
                                                              <!-- section 4-->
-        <section class="section skills_section" id="skills">
+        <section class="section skills_section" id="skills" >
             <div class="head">
                 Skills
             </div>
-            <div class="main-content skill-content">
+            <div class="main-content skill-content" data-aos="fade-up">
                 <div class="skill skill-1" >
                     <div class="skill_div">
                         <!-- <img src="../Media/icons/illustrator.png" class="skill-icon" alt=""> -->
@@ -345,7 +348,7 @@
                 <div class="experienc">
                     <h1>Experience</h1>
 
-                    <div class="experience_info">
+                    <div class="experience_info" data-aos="fade-left">
                         <div class="company_title">
                             <img src="https://i0.wp.com/janngroup.com.bd/wp-content/uploads/2022/05/Jann_Group.png?fit=508125&ssl=1" alt="company logo">
                             <h5 class="company_name" title="sister concern of JANN Group" style="text-decoration: underline;"><a href="https://nafisabd.com/" target="_blank">Nafisa Int’l Trading (BD) Ltd.</a>   <a href="https://olympiasourcing.com/" target="_blank">(Olympia Sourcing Limited)</a></h5>
@@ -358,7 +361,7 @@
                         <span>Jan 2025 - Present</span>
                     </div>
 
-                    <div class="experience_info">
+                    <div class="experience_info" data-aos="fade-left">
                         <div class="company_title">
                             <img src="Media/eco logo.png" alt="company logo" style="margin: auto; width: 6rem;">
                             <h5 class="company_name" style="text-decoration: underline;"><a href="https://www.ecosourcing.org/" target="_blank">ECO Sourcing Limited</a></h5>
@@ -378,7 +381,7 @@
                 
                 <div class="education">
                     <h1>Education</h1>
-                    <div class="experience_info">
+                    <div class="experience_info" data-aos="fade-right">
                         <div class="company_title">
                             <img src="https://smuct.ac.bd/wp-content/uploads/2020/10/SMUCT-Logo-1-Converted.png" alt="University">
                             <br><br><h5 style="text-decoration: underline;" class="company_name"><a href="https://smuct.ac.bd/">Shanto-Mariam University Of Creative Technology</a></h5>
@@ -403,11 +406,11 @@
         <section class="section" id="contact">  <!-- section  6 -->
             <div class="contact_div">
                 <div class="contact_img">
-                    <img src="Media/contact img.webp" alt="">
+                    <img src="Media/contact img.webp" alt="" data-aos="fade-up">
                 </div>
 
                 <div class="contact_form">
-                    <div class="contact_head">Reach Out</div>
+                    <div class="contact_head" data-aos="fade-left">Reach Out</div>
 
                     <div class="contact_left">
                         <div class="form">
@@ -457,4 +460,17 @@
 </body>
 <script src="javaScript/javascript.js" defer></script>   
 <script src="javaScript/header.js" defer></script>   
+
+<!-- AOS Library -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+  duration: 1200,           // Slightly longer duration
+  easing: 'ease-out-cubic', // Smoother easing
+  once: true,               
+  offset: 120,              // Starts animation slightly before the element fully appears
+});
+
+</script>
+
 </html>
