@@ -906,11 +906,11 @@ padding-bottom: 1rem;
     margin-left: 3rem;
 }
 .contact_img img {
-  width: 99%;
+  width: 100%;
   position: static;
 }
 .contact_img {
-  /* width: 28.5%; */
+  width: 28.5%;
   margin: auto;
   padding-top: 0rem;
 }
