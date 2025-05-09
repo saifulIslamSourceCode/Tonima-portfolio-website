@@ -27,11 +27,6 @@ function initHeaderMenu() {
   btns[0].addEventListener("click", () => {
     btns.forEach((b) => b.classList.remove("menu_btn_click"));
     btns[1].classList.add("menu_btn_click");
-    if(window.innerWidth > 768) {
-      btns[1].style.left = "27rem";
-    } else {
-      btns[1].style.left = "20rem";
-    }
   
     sideBar.classList.add("side_nav_div_visible");
     document.body.style.overflow = "hidden";
