@@ -953,10 +953,7 @@ padding-bottom: 1rem;
   left: -41rem;
 }
 .about-content {
-  width: 91% !important;
   /* margin: auto; */
   position: absolute;
-  left: 4% !important;
-  top: 20% !important;
 }
 }
