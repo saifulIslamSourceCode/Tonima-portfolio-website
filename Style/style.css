@@ -715,7 +715,7 @@ width: 1.5rem;
     overflow-x: hidden;
   }
   #home{
-    color: blanchedalmond;
+    color: rgb(0, 0, 0);
   }
   .text-ontop-video > div {
       /* font-size: 5rem; */
