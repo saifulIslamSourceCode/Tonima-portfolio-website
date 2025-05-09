@@ -338,7 +338,9 @@ button img {
   background: linear-gradient(90deg, rgba(250, 242, 255, 1) 7%, rgba(252, 232, 255, 1) 22%, rgba(255, 214, 228, 1) 41%, rgba(255, 219, 219, 1) 59%, rgba(255, 240, 230, 1) 79%, rgba(255, 230, 230, 1) 100%);
   transition: 0.5s;
 }
-
+.preloader img {
+  width: 100%;
+}
 .loader-content img {
   width: 100px;
   margin-bottom: 20px;
