@@ -718,7 +718,7 @@ width: 1.5rem;
     color: rgb(0, 0, 0);
   }
   .text-ontop-video {
-    color: black;
+    /* color: black; */
   }
   .text-ontop-video > div {
       /* font-size: 5rem; */
