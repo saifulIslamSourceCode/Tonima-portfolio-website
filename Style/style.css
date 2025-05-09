@@ -470,6 +470,7 @@ section .head {
 .profile-img {
   width: 45rem;
   border-radius: 50%;
+  margin-top: 4rem;
 }
 .about-text {
   margin-top: 3rem;
@@ -954,6 +955,6 @@ padding-bottom: 1rem;
 }
 .about-content {
   /* margin: auto; */
-  position: absolute;
+  /* position: absolute; */
 }
 }
