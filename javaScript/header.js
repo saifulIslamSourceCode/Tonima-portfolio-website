@@ -28,7 +28,7 @@ function initHeaderMenu() {
     btns.forEach((b) => b.classList.remove("menu_btn_click"));
     btns[1].classList.add("menu_btn_click");
     if(window.innerWidth > 768) {
-      btns[1].style.left = "38rem";
+      btns[1].style.left = "27rem";
     } else {
       btns[1].style.left = "20rem";
     }

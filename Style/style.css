@@ -948,4 +948,8 @@ padding-bottom: 1rem;
 .contact_img img {
   border-radius: 0;
 }
+.img-name {
+  top: -15rem;
+  left: -41rem;
+}
 }
