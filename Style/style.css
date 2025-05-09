@@ -714,6 +714,9 @@ width: 1.5rem;
     font-size: 11px;
     overflow-x: hidden;
   }
+  #home{
+    color: blanchedalmond;
+  }
   .text-ontop-video > div {
       /* font-size: 5rem; */
   }
